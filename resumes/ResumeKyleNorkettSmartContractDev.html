@@ -247,10 +247,9 @@
     </header>
 
     <p class="summary">
-      Smart Contract / Protocol Engineer specializing in secure on-chain systems, mechanism design, and production Solidity.
-      4+ years building and deploying contracts across Ethereum and L2s with experience spanning protocol architecture,
-      economic modeling, and security-focused development. Comfortable owning systems end-to-end from design through
-      deployment and audit.
+      Smart contract and protocol engineer with 4+ years of experience across Ethereum and L2s.
+      Builds Solidity contracts, zero-knowledge proof systems, and tooling for protocol testing and on-chain analysis.
+      Comfortable owning systems end-to-end from design through deployment and audit.
     </p>
 
     <section>
@@ -265,7 +264,7 @@
           <p>Protocol design, invariants and fuzzing, governance, economic modeling, threat modeling</p>
         </div>
         <div class="skill-group">
-          <h3>Supporting</h3>
+          <h3>Programming and Analysis</h3>
           <p>TypeScript, Python, Noir (ZK), on-chain analytics</p>
         </div>
       </div>
@@ -276,13 +275,23 @@
 
       <article class="item">
         <div class="item-header">
-          <div class="item-title">Civitai</div>
-          <div class="item-meta">Smart contract developer (2025)</div>
+          <div class="item-title">StateMint</div>
+          <div class="item-meta">Founder &amp; Protocol Engineer (2026-Present)</div>
         </div>
         <ul>
-          <li>Designed and deployed on-chain payment and billing infrastructure for an AI image generation platform.</li>
-          <li>Advised on operational security practices and contract risk mitigation.</li>
-          <li>Implemented and tested integration with ZK-based on-ramp tooling.</li>
+          <li>Lead protocol architecture and engineering for an application-specific Ethereum zk-rollup supporting fractional asset markets and batch auctions.</li>
+          <li>Prototyped a recursive proof pipeline linking auction correctness, fill-delta aggregation, quote and share settlement, and account-state recomposition into a bridge proof for subsequent global state composition.</li>
+          <li>Completed a reproducible benchmarking suite; now gathering performance evidence to guide optimization of the circuit pipeline.</li>
+        </ul>
+      </article>
+      <article class="item">
+        <div class="item-header">
+          <div class="item-title">Civitai</div>
+          <div class="item-meta">Smart Contract Developer (Contract, 2025)</div>
+        </div>
+        <ul>
+          <li>Designed, built, tested, and deployed to testnet an ERC-20 payment system with configurable token purchasing and administrative usage-based billing.</li>
+          <li>Evaluated ZKP2P for payment onboarding through integration testing.</li>
         </ul>
       </article>
 
@@ -292,14 +301,12 @@
           <div class="item-meta">Lead smart contract developer (2021-2024)</div>
         </div>
         <ul>
-          <li>Led development of core protocol contracts across Ethereum, zkSync, and Base, owning architecture, testing strategy, and deployments.</li>
-          <li>Identified and resolved two critical vulnerabilities during pre-deployment review, preventing potential loss of funds.</li>
-          <li>Designed escrow system for automated real estate transactions using optimistic oracles and ZK proofs.</li>
-          <li>Reduced payment settlement costs ~10x through L2 migration strategy.</li>
-          <li>Migrated ERC-20 token and liquidity infrastructure to Base to support user growth.</li>
-          <li>Built financial simulations and pricing models to evaluate protocol economics and risk.</li>
-          <li>Developed tooling and dashboards to analyze on-chain activity and user behavior.</li>
-          <li>Partnered with product and operations to define protocol policies and security practices.</li>
+          <li>Led architecture, testing, and deployment of protocol contracts across Ethereum, zkSync, and Base.</li>
+          <li>Identified and resolved two critical vulnerabilities during pre-deployment review.</li>
+          <li>Designed an escrow system for automated real estate transactions using optimistic oracles and ZK proofs.</li>
+          <li>Reduced ETH distribution costs ~10x using batched zkSync withdrawals for L1 claims.</li>
+          <li>Migrated ERC-20 token and liquidity infrastructure to Base.</li>
+          <li>Built financial simulations, pricing models, and on-chain analytics tooling to evaluate protocol economics and risk.</li>
         </ul>
       </article>
     </section>
@@ -315,23 +322,12 @@
         <ul>
           <li>Designed and built a DeFi liquidation cascade simulation engine for stress-testing Ethereum lending markets and modeling forced-flow dynamics during market crashes.</li>
           <li>Modeled recursive liquidation reflexivity across Aave-style collateral systems, including liquidation sequencing, correlated collateral exposure, eMode handling, oracle TWAP lag, liquidity withdrawal, and cross-market contagion dynamics.</li>
-          <li>Integrated live router-based price impact estimation using forked Uniswap liquidity to simulate executable slippage and liquidity exhaustion under stress conditions.</li>
-          <li>Developed historical crash replay and backtesting framework covering major crypto deleveraging events with configurable volatility regimes and liquidation-flow sensitivity analysis.</li>
+          <li>Integrated router-based price impact estimation using forked Uniswap liquidity to simulate executable slippage and liquidity exhaustion under stress conditions.</li>
+          <li>Implemented a historical crash-replay and backtesting framework with configurable volatility regimes and liquidation-flow sensitivity analysis.</li>
           <li>Built tooling to reconstruct on-chain lending positions and evaluate cascade amplification effects under varying market conditions.</li>
         </ul>
       </article>
 
-      <article class="item">
-        <div class="item-header">
-          <div class="item-title">ProofLayer</div>
-          <div class="item-meta">Smart Contract and ZK Developer (2026)</div>
-        </div>
-        <ul>
-          <li>Built privacy-preserving KYC system using zero-knowledge proofs.</li>
-          <li>Implemented Noir circuit proving Merkle inclusion without revealing user data.</li>
-          <li>Enabled reusable credentials for attribute verification without exposing PII.</li>
-        </ul>
-      </article>
 
       <article class="item">
         <div class="item-header">
@@ -339,8 +335,7 @@
           <div class="item-meta">Smart contract developer (2025)</div>
         </div>
         <ul>
-          <li>Designed subscription primitive eliminating unlimited token approvals via EIP-7702.</li>
-          <li>Implemented lifecycle controls enabling recurring payments with only user signatures after initial setup.</li>
+          <li>Designed and implemented an EIP-7702 subscription payment primitive with recurring-payment lifecycle controls, avoiding unlimited token approvals.</li>
         </ul>
       </article>
     </section>
@@ -350,26 +345,14 @@
 
       <article class="item">
         <div class="item-header">
-          <div class="item-title">DeFi Llama</div>
+          <div class="item-title">DefiLlama</div>
           <div class="item-meta">2025-2026</div>
         </div>
         <p class="item-role">Open source data aggregator for decentralized finance</p>
         <ul>
-          <li>Added liquidation data for AAVE v3 instances across multiple chains.</li>
+          <li>Added liquidation data for Aave v3 instances across multiple chains.</li>
           <li>Updated schema and liquidation thresholds to include efficiency-mode data.</li>
           <li>Added MetaLeX TVL adapter to track escrowed balances for CyberCORPs.</li>
-        </ul>
-      </article>
-
-      <article class="item">
-        <div class="item-header">
-          <div class="item-title">Project Lighthouse</div>
-          <div class="item-meta">2022</div>
-        </div>
-        <p class="item-role">Clean-room, open-source custom server for LittleBigPlanet</p>
-        <ul>
-          <li>Applied cryptanalysis to improve security, allowing for authentication using PSN servers.</li>
-          <li>Improved moderation features.</li>
         </ul>
       </article>
     </section>
