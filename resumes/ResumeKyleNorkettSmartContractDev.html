@@ -178,7 +178,7 @@
       white-space: nowrap;
     }
 
-    @media (max-width: 760px) {
+    @media screen and (max-width: 760px) {
       .page {
         width: 100%;
         margin: 0;
@@ -218,6 +218,37 @@
 
       body {
         background: #ffffff;
+      }
+
+      html {
+        font-size: 11.5pt;
+      }
+
+      .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .item,
+      .skills-grid,
+      .education {
+        break-inside: avoid;
+        page-break-inside: avoid;
+      }
+
+      h2,
+      .item-header {
+        break-after: avoid;
+        page-break-after: avoid;
+      }
+
+      li {
+        break-inside: avoid;
+      }
+
+      .projects {
+        break-before: page;
+        page-break-before: always;
       }
 
       .page {
@@ -311,7 +342,7 @@
       </article>
     </section>
 
-    <section>
+    <section class="projects">
       <h2>Project Experience</h2>
 
       <article class="item">
